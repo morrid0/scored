@@ -1,5 +1,6 @@
 import Header from './/components/header/Header'
-import Footer from './components/footer/Footer'
+import Navbar from './components/navbar/Navbar'
+
 import styles from './page.module.css'
 
 export default function Home() {
@@ -7,7 +8,8 @@ export default function Home() {
     <main className={styles.main}>
 
         <Header />
-        <Footer />
+        <Navbar />
+
 
     </main>
   )
