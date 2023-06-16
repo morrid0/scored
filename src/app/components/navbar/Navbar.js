@@ -4,6 +4,9 @@ export default function Navbar() {
             <li>
                 <a href={"/login"}>Login</a>
             </li>
+            <li>
+                <a href={"/"}>Home</a>
+            </li>
         </ul>
     )
 }
