@@ -1,11 +1,11 @@
 import styles from "../page.module.css";
-import Conta from "../components/conta/Conta";
+import LoginForm from "../components/login/LoginForm";
 import Navbar from "../components/navbar/Navbar";
 
 export default function Page() {
   return (
     <main className={styles.main}>
-      <Conta />
+      <LoginForm />
       <Navbar />
     </main>
   );

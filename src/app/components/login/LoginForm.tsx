@@ -1,4 +1,4 @@
-export default function Conta() {
+export default function LoginForm() {
   return (
     <form>
       <fieldset>
