@@ -1,3 +1,5 @@
 export default function Footer() {
-    <footer><p>Rodapé</p></footer>
+  <footer>
+    <p>Rodapé</p>
+  </footer>;
 }

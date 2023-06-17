@@ -1,16 +1,13 @@
-import Header from './components/header/Header'
-import Navbar from './components/navbar/Navbar'
+import Header from "./components/header/Header";
+import Navbar from "./components/navbar/Navbar";
 
-import styles from './page.module.css'
+import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-
-        <Header />
-        <Navbar />
-
-
+      <Header />
+      <Navbar />
     </main>
-  )
+  );
 }
