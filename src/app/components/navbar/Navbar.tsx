@@ -1,11 +1,13 @@
+import Link from "next/link";
+
 export default function Navbar() {
   return (
     <ul>
       <li>
-        <a href={"/login"}>Login</a>
+        <Link href="/login"> Login </Link>
       </li>
       <li>
-        <a href={"/"}>Home</a>
+        <Link href="/"> Home </Link>
       </li>
     </ul>
   );

@@ -1,3 +1,6 @@
+"use client";
+import { Button, TextField } from "@mui/material";
+
 export default function LoginForm() {
   return (
     <form>
@@ -5,19 +8,22 @@ export default function LoginForm() {
         <legend>Insira seus dados para Login</legend>
 
         <div>
-          <input type="email" placeholder="Email" required></input>
-          <label>Email</label>
+          <TextField
+            label={"Email"}
+            inputProps={{
+              type: "email",
+              placeholder: "Email",
+              required: true,
+            }}
+          />
         </div>
         <div>
-          <input type="password" placeholder="Senha" required></input>
-          <label className="input-label" htmlFor="senha">
-            Senha
-          </label>
+          <TextField type="password" placeholder="Senha" required label={"Password"} />
         </div>
       </fieldset>
-      <button>
+      <Button variant={"contained"} size={"large"} color={"success"} type={"submit"}>
         <a>Entrar</a>
-      </button>
+      </Button>
     </form>
   );
 }
