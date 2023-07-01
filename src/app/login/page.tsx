@@ -1,12 +1,10 @@
-import styles from "../page.module.css";
 import LoginForm from "../components/login/LoginForm";
-import Navbar from "../components/navbar/Navbar";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Login",
+};
 
 export default function Page() {
-  return (
-    <main className={styles.main}>
-      <LoginForm />
-      <Navbar />
-    </main>
-  );
+  return <LoginForm />;
 }

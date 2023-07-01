@@ -1,13 +1,3 @@
-import Header from "./components/header/Header";
-import Navbar from "./components/navbar/Navbar";
+export const Home = () => <main>This is the home page</main>;
 
-import styles from "./page.module.css";
-
-export default function Home() {
-  return (
-    <main className={styles.main}>
-      <Header />
-      <Navbar />
-    </main>
-  );
-}
+export default Home;
