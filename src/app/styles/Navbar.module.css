@@ -1,0 +1,21 @@
+.navbar {
+
+    background-color: black;
+    display: flex;
+    min-height: 5vh;
+    padding: 20px;
+}
+
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    margin-left: 5px;
+    margin-right: 1em;
+    transition: 0.3s;
+
+}
+
+.navbar a:hover {
+    color: red;
+}

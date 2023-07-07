@@ -2,6 +2,8 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import { Footer } from "@/app/components/footer/Footer";
 import { Metadata } from "next";
+import styles from "./styles/MainContainer.module.css";
+import Header from "@/app/components/header/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,12 +14,11 @@ export const metadata: Metadata = {
 
 export const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        {children}
-        <Footer />
-      </body>
-    </html>
+    <>
+      <Header />
+      <div className={styles.container}>{children}</div>
+      <Footer />
+    </>
   );
 };
 
